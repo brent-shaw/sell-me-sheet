@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+      <div class="col-lg-12">
+          {% if (specials|length > 0) %}
+          <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+              {% for item in specials %}
+                {% if loop.index == 1 %}
+                <div class="carousel-item active">
+                {% else %}
+                <div class="carousel-item">
+                {% endif %}
+                  <img class="d-block img-fluid" src="/static/img/{{item[1]}}" alt="{{item[0]}}">
+                  <div class="carousel-content">
+                    <a href="/item/{{item[2]}}">{{item[0].upper()}}</a>
+                  </div>
+                </div>
+              {% endfor %}
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        &nbsp;
+        {% endif %}
+        <div class="row">
+          {% for item in products %}
+          {% if item[0].lower() == category or category == "all"%}
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="/static/img/{{item[3]}}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="/item/{{loop.index}}">{{item[1]}}</a>
+                </h4>
+                <h5>R{{item[2]}}</h5>
+                <p class="card-text">{{item[4]}}}</p>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+{% endblock %}
