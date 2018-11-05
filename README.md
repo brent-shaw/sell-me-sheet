@@ -9,8 +9,10 @@ Using sheetShop is simple, you just fill out the spreadsheet with the items you 
 ![ProductSheet](/misc/sheet.png)
 
 The shop will then be accessible and usable. The whole shop is dynamic and will add row, column and specials banners as needed. The categories menu, shop name and pricing is also dynamic, and only needs to be set in the spreadsheet.
+
 ![ProductList](/misc/list.png)
 
 If you enter your company's Zapper information is entered into the spreadsheet, then Zapper codes will automatically be created and embedded on each page.
+
 ![ItemDetails](/misc/item.png)
 
