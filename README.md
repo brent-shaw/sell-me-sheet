@@ -4,7 +4,7 @@ Quick and easy in store catalogue using spreadsheet based price-lists, and Zappe
 **NOTE:** This is not intended as an online store, but as an in-store catalogue and alternative to cash and card based payments.
 
 ## Usage
-Using sheetShop is simple, you just fill out the spreadsheet with the items you would like, and place any images you would like to use in the image folder. When the site is started, the shop will be built based on this information.
+Using sell-me-sheet is simple, you just fill out the spreadsheet with the items you would like, and place any images you would like to use in the image folder. When the site is started, the shop will be built based on this information.
 
 <p align="center">
 <img src="/misc/sheet.png" width="500">
