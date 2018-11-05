@@ -1,4 +1,4 @@
-# sheetShop
+# sell-me-sheet
 Quick and easy in store catalogue using spreadsheet based price-lists, and Zapper for payment.
 
 **NOTE:** This is not intended as an online store, but as an in-store catalogue and alternative to cash and card based payments.
