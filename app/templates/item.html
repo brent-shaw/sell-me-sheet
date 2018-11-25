@@ -15,11 +15,6 @@
                 </div>
                 <div class="col-lg-6">
                   <div id="zappay">
-                    <script>
-                      zapper("#zappay", {{merchantID}}, {{siteID}}, {{price}}, "{{product}}", function (paymentResult) {
-                        // Maybe do something with the payment result. Question mark?
-                      });
-                    </script>
                   </div>
                 </div>
               </div>
@@ -27,8 +22,10 @@
           </div>
         </div>
       </div>
-    <!-- Include the Zapper Library -->
-    <script src="https://code.zapper.com/zapper.js"></script>
     <center><a href="/category/all"></a></center>
+    <script>
+    zapper("#zappay", {{merchantID}}, {{siteID}}, {{price}});
+    </script>
+    <script src="https://code.zapper.com/zapper.js"></script>
     </div>
 {% endblock %}
