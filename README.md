@@ -21,3 +21,5 @@ If you enter your company's Zapper information is entered into the spreadsheet, 
 <p align="center">
 <img src="/misc/item.png" width="500">
 </p>
+
+TODO Image to folder script
